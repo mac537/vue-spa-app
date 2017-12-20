@@ -14,7 +14,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'restaurante-detalle',
+  name: 'item-detail',
   mounted(){
   	this.id = this.$route.params.id
 

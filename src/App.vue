@@ -1,10 +1,8 @@
 <template>
   <div>
    <ul>
-     <li><router-link to="/home">Home</router-link></li>
-     <li><router-link to="/restaurantes">Restaurante</router-link></li>
-     <li><router-link :to="{name: 'restaurante-destacado', params: {id: 16}}">Restaurante destacado</router-link></li>
-     <li><router-link to="/contacto">Contacto</router-link></li>
+     <li><router-link to="/">Home</router-link></li>
+     <li><router-link :to="{name: 'add-item'}">Add Item</router-link></li>
    </ul>
 
     <router-view></router-view>
@@ -16,10 +14,10 @@
 
 
 export default {
-  name: 'RestaurantesApp',
+  name: 'App',
   data () {
     return {
-      msg: 'RestaurantesApp'
+      msg: 'App'
     }
   }
 }
